@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Spinner, Layout } from "./components/index";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import ScrollTop from "./hoc/ScrollTop";
 
-export default App;
+
+const Home = lazy(() => import("./pages/Home"));
+
+const routes = [
+    { path: "", element: Home },
+
+]
+const RoutesContainer = () => (
+	<Router>
+			<Layout>
+				<Suspense fallback={<Spinner position="full" />}>
+					<Routes>
+						{routes.map((route, key) => {
+							const RouteComponent = ScrollTop(route.element);
+							return <Route key={key} path={route.path} element={<RouteComponent />} />;
+						})}
+					</Routes>
+				</Suspense>
+			</Layout>
+	</Router>
+);
+
+export default RoutesContainer;
