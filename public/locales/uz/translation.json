@@ -11,5 +11,10 @@
     "transportation": "Transport",
     "services": "Xizmatlar",
     "follow": "Telegramda kuzatib boring"
+  },
+  "footer": {
+    "partners": "Bizning hamkorlarimiz",
+    "helper": "Yordam",
+    "part_of_team": "Jamoaning bir qismi bo'ling"
   }
 }

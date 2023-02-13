@@ -10,7 +10,7 @@ import { BsTelegram } from 'react-icons/bs';
 import { useLocation } from "react-router";
 import { FaFacebook } from "react-icons/fa";
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
-import { AiOutlinePlus, AiFillInstagram } from 'react-icons/ai';
+import { AiOutlinePlus, AiOutlineMinus, AiFillInstagram } from 'react-icons/ai';
 
 const Header = () => {
 	const [isactiveLangBar, setisactiveLangBar] = useState(false);
@@ -44,7 +44,12 @@ const Header = () => {
 								<div className="header-nav-list-services"
 									onClick={() => setactiveServicesBar((e) => e ? false : true)}
 									style={activeServicesBar ? { "height": "auto" } : null}>
-									<div><b style={activeServicesBar ? { "color": "#28C79E" } : null}>{t("header.services")}</b> <AiOutlinePlus className="header-nav-list-services-icon" /></div>
+									<div>
+										<b style={activeServicesBar ? { "color": "#28C79E" } : null}>{t("header.services")}</b>
+										{
+											activeServicesBar ? <AiOutlineMinus className="header-nav-list-services-icon" /> : <AiOutlinePlus className="header-nav-list-services-icon" />
+										}
+									</div>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/services">{t("header.service")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate">{t("header.corporate")}</NavLink>
