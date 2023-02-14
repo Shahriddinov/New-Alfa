@@ -1,0 +1,200 @@
+@import '../../assets/style/global.scss';
+
+
+.about-section{
+    width: 1440px;
+    margin: auto;
+
+    @include respond(phone){
+        width: 375px;   
+    }
+
+    &-one{
+        
+    }
+    // two///////////////////////////
+    &-two{
+
+    }
+    // /// three ///////////////////////
+    &-three{
+
+    }
+    // //// four/////////////////////
+    &-four{
+
+    }
+    // //// five /////////////////////
+    &-five{
+
+    }
+
+    // ///// six /////////////////////
+    &-six{
+        margin: 60px 90px 0 90px;
+        overflow-x: hidden;
+
+        @include respond(phone){
+            display: none;
+        }
+        &__slide-track{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            // width: calc(200px * 10);    
+            animation: scroll 50s linear infinite;
+
+            &:hover{
+                animation-play-state: paused;
+            }
+
+            @keyframes scroll {
+                0%{
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-200px * 10));
+                }
+            }
+            &-slide{
+                perspective: 100px;
+                 & > img{
+                    min-width: 200px;
+                    height: 80px;
+                    transition: transform 1s;
+
+                    &:hover{
+                        transform: translateZ(15px);
+                    }
+                 }
+            }
+        }
+
+    }
+
+    // seven /////////////////////////////
+    &-seven{
+        margin: 78px 90px 0 90px;
+
+        @include respond(phone){
+            margin: 30px 16px 0 16px;
+        }
+
+
+        &__wrapper{
+
+            display: flex;
+            justify-content: space-between;
+
+            @include respond(phone){
+                flex-direction: column;
+            }
+
+            &-right{
+                & > img{
+                    width: 20px;
+                    height: 28px;    
+                    
+                     @include respond(phone){
+                         width: 16px;
+                         height: 22px;
+                     }
+
+                }
+
+                & > h1 {
+                    margin-top: 10px;
+                    width: 140px;
+                    height: 41px;
+                    font-weight: 700;
+                    font-size: 34px;
+                    line-height: 41px;
+                    color: $secondaryTextColor;
+         
+                     @include respond(phone){
+                         margin-top: 10px ;
+                         width: 117px;
+                         font-size: 18px;
+                         line-height: 22px;
+                     } 
+
+                }
+
+            }
+            &-left{
+                margin-top: 27px;
+                display: flex;
+                gap: 20px;
+
+                @include respond(phone){
+                    margin-top: 0px;
+                 } 
+
+
+                & > button {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 100%;
+                    border: none;
+
+                    @include respond(phone){
+                       display: none;
+                    } 
+                    
+                    & > img {
+                        width: 12.86px;
+                        height: 6.86px;
+                        color: $secondaryTextColor;
+                        margin-bottom: 2px;
+
+                        @include respond(phone){
+                            display: none;
+                         } 
+
+                    }
+
+
+                    &:hover{
+                        cursor: pointer;
+                        border: solid 1px black;
+
+                    }
+                }
+
+            }
+        }
+
+        &__carouselImgContainer{
+            display: flex;
+            gap: 30px;
+            overflow-x: hidden;
+            margin-top: 30px;
+
+            @include respond(phone){
+                margin-top: 10px;
+             } 
+            
+            
+
+            & > img{
+                width: 500px;
+                height: 320px;
+                border-radius: 20px;
+                transition: all 0.3s;
+
+                @include respond(phone){
+                    width: 280px;
+                    height: 172px;
+                    border-radius: 10px;
+                 } 
+            }
+        }
+
+        
+    }
+    
+    
+    
+
+
+}

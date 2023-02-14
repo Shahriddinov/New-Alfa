@@ -14,14 +14,92 @@ import colligues2 from '../../assets/images/collegues2.png';
 import colligues3 from '../../assets/images/collegues3.png';
 import colligues4 from '../../assets/images/collegues4.png';
 import logo from '../../assets/images/logo.svg';
+import softLogo from '../../assets/images/softLogo.png';
+
+
+import img1 from '../../assets/images/waiter4x.png';
+import img2 from '../../assets/images/img4x2.png';
+import img3 from '../../assets/images/img4x3.png'
+import img4 from '../../assets/images/img4x4.png';
+import { useState } from "react";
+import { useEffect } from "react";
+
+
+
+
+  
+
+
+// import { useTranslation } from 'react-i18next';
 
 
 
 
 
 const Home = ()=>{
+
+    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
+    const slides = [
+        {id: 1, url: img1},
+        {id: 2, url: img2},
+        {id: 3, url: img3},
+        {id: 4, url: img4}
+    ]
+
+    // const goToPrevious = () => {
+    //     const isFirstSlide = currentSlideIndex === 0;
+    //     const newIndex = isFirstSlide ? slides.length - 1: currentSlideIndex - 1;
+    //     setCurrentSlideIndex(newIndex) 
+    // }
+
+    // const goToNext = () => {
+    //     const islastSlide = currentSlideIndex === slides.length - 1;
+    //     const newIndex = islastSlide ? 0 : currentSlideIndex + 1;
+    //     setCurrentSlideIndex(newIndex) 
+    // }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+                const islastSlide = currentSlideIndex === slides.length - 1;
+                const newIndex = islastSlide ? 0 : currentSlideIndex + 1;
+                setCurrentSlideIndex(newIndex) 
+        }, 5000);
+
+
+        return () => clearInterval(interval)
+    },[currentSlideIndex])
+
+    const goToSlide = (slideIndex) => {
+        setCurrentSlideIndex(slideIndex)
+    }
+
+    const activeStyle = (slideIndex) => {
+        if(slideIndex === currentSlideIndex) {
+            return 'section-zero__dotsContainer-dots active'
+        }
+        return 'section-zero__dotsContainer-dots'
+    }
+
+    // const { t } = useTranslation();
+
 return(
     <div className="section">
+
+        <div className="section-zero">
+            {/* <div className="section-zero__image"></div> */}
+            <div className="section-zero__imageCaorusel" style={{backgroundImage: `url(${slides[currentSlideIndex].url})`}}></div>
+            <div className="section-zero__dotsContainer">
+                {slides.map((slide, slideIndex) => (
+                    <div key={slideIndex} className={activeStyle(slideIndex)}  onClick={() => goToSlide(slideIndex)} ></div>
+                ))}
+            </div>
+            <div className="section-zero__wrapper">
+                <img src={softLogo} alt="logo" />
+                <h1>Корпоративного питания и инженерно-технической эксплуатации</h1> 
+                <button>Узнать больше</button>     
+            </div>
+        </div>
 
         <div className="section-one">
             <img className="section-one__image" src={cheff} alt="cheffImage" />

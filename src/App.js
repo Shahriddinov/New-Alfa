@@ -6,9 +6,11 @@ import ScrollTop from "./hoc/ScrollTop";
 
 
 const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About/about.jsx"))
 
 const routes = [
     { path: "", element: Home },
+    { path: "/about", element: About }
 
 ]
 const RoutesContainer = () => (
