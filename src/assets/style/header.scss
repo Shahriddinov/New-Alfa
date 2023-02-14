@@ -1,7 +1,6 @@
 @import "../style/global.scss";
 
 .header {
-  background-color: antiquewhite;
   z-index: 10;
 
   &-DarkColor {
@@ -21,9 +20,7 @@
   &-border {
     height: 1px;
     width: 100%;
-    background: $primary-light-color;
     opacity: 0.8;
-    transform: trans;
   }
 
   &-top {
@@ -229,7 +226,7 @@
       display: none;
     }
 
-    &-border {
+    &-border:last-child {
       display: none;
     }
 

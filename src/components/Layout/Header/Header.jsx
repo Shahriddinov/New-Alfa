@@ -108,7 +108,7 @@ const Header = () => {
 						</nav>
 					</div>
 				</div>
-				<div className="header-border"></div>
+				<div className="header-border" style={pathname === "/" ? { "backgroundColor": "#FFFFFF" } : { "backgroundColor": "#F0F0F0" }}></div>
 				<div className="container">
 					<nav className="header-bottom">
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
@@ -117,7 +117,7 @@ const Header = () => {
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/transportation">{t("header.transportation")}</NavLink>
 					</nav>
 				</div>
-				<div className="header-border"></div>
+				<div className="header-border" style={pathname === "/" ? { "backgroundColor": "#FFFFFF" } : { "backgroundColor": "#F0F0F0" }}></div>
 			</div>
 		</header>
 	);

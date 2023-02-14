@@ -40,6 +40,40 @@ $primary-green-color: #28C79E;
 }
 
 
+// shablon
+
+%custom-hero {
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 916px) {
+    %custom-hero {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    %custom-hero {
+        height: 220px;
+        border-radius: 15px;
+    }
+}
+
+%custom-button {
+    padding: 15px 30px;
+    @include fontStyle(600, 16px, 19px, $primary-light-color );
+    border-radius: 15px;
+    border: none;
+    background-color: $primary-green-color;
+}
 
 // fonts
 /* exo-2-regular - latin_cyrillic */

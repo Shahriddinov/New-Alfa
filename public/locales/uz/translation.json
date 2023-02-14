@@ -27,5 +27,23 @@
     "experience": "Kamida bir yillik tajriba va o'z ishiga mas'uliyat",
     "cook": "Oshpaz",
     "type_of_food": "Kamida bir yillik tajriba va sakkiz turdagi taomlarni tayyorlash imkoniyatiga ega bo‘lishi kerak"
-  }
+  },
+  "cooperation": {
+    "desc": "Alfa-best kompaniyasi sanoat korxonalari, savdo markazlari, yirik va o'rta kompaniyalar bilan kompleks xizmatlar sohasida hamkorlik qilishdan mamnun bo'ladi.",
+    "outsourcing": {
+      "text": "Autsorsingning asosiy afzalliklari",
+      "1": "Jarayonni optimallashtirish orqali xarajatlarni kamaytirish",
+      "2": "Sizning ehtiyojlaringizga moslashtirilgan menyu va xizmatlar",
+      "3": "Malakali tajribali pudratchini jalb qilish orqali xizmatlar sifatini oshirish",
+      "4": "Boshqaruv jamoasining sa'y-harakatlarini asosiy faoliyatga jamlash"
+    },
+    "form": {
+      "service": "Xizmat turini tanlang",
+      "input": "Korporativ ovqatlanish",
+      "full_name": "Toʻliq ismingizni kiriting",
+      "name": "Ism, familiya",
+      "tell": "Telefon raqamingizni kiriting"
+    }
+  },
+  "send": "Yuborish"
 }

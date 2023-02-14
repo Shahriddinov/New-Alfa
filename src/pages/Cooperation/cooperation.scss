@@ -1,0 +1,223 @@
+@import "../../assets/style/global.scss";
+
+.main {
+  margin-top: 30px;
+
+  &-hero {
+    margin-bottom: 30px;
+    @extend %custom-hero;
+    background-image: url("../../assets/images/cooperation-hero-background.jpg");
+
+    &-wrapper {
+      width: 100%;
+      padding: 0 0 40px 30px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, rgba(0, 0, 0, 0.52) 71.51%);
+
+      &>h2 {
+        margin-top: 10px;
+        @include fontStyle(700, 36px, 43px, $primary-light-color);
+      }
+
+      &>img {
+        width: 20px;
+        height: 28px;
+      }
+    }
+  }
+
+  &-desc {
+    margin-bottom: 60px;
+
+    &>p {
+      @include fontStyle(400, 17px, 140%, $primary-dark-color);
+    }
+  }
+
+  &-outsourcing {
+    margin-bottom: 60px;
+
+    &-title {
+      &>h2 {
+        margin-top: 10px;
+        @include fontStyle(700, 34px, 41px, $primary-dark-color);
+      }
+
+      &>img {
+        width: 20px;
+        height: 28px;
+      }
+    }
+
+    &-list {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 60px;
+      row-gap: 30px;
+
+      &-item {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        gap: 30px;
+        align-items: start;
+
+        &>p {
+          @include fontStyle(500, 20px, 24px, $primary-dark-color);
+        }
+      }
+    }
+  }
+
+  &-forming {
+    margin-bottom: 56px;
+    padding: 30px 120px 33px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F2FCF9;
+    border-radius: 20px;
+
+    &-btn {
+      max-width: 143px;
+      @extend %custom-button;
+    }
+
+    &-form {
+      margin-right: 40px;
+      width: 100%;
+      max-width: 396px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-select {
+          padding: 0 15px;
+          width: 100%;
+          height: 48px;
+          border: 1px solid $primary-dark-color;
+          border-radius: 15px;
+          outline: none;
+
+          &>option {
+            @include fontStyle(300, 15px, 140%, $primary-dark-color);
+          }
+        }
+
+        &>input {
+          padding: 0 15px;
+          width: 100%;
+          height: 48px;
+          border: 1px solid $primary-dark-color;
+          border-radius: 15px;
+          outline: none;
+
+          &::placeholder {
+            @include fontStyle(300, 15px, 140%, $primary-dark-color);
+          }
+        }
+
+        &>span {
+          @include fontStyle(400, 15px, 140%, $primary-dark-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .main-forming {
+    padding: 20px 15px 30px;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  .main {
+    margin-top: 10px;
+
+    &-hero {
+      background-image: url("../../assets/images/cooperation-hero-background-mobile.jpg");
+
+      &-wrapper {
+        padding: 0 0 15px 15px;
+
+        &>h2 {
+          @include fontStyle(700, 18px, 22px, $primary-light-color);
+        }
+
+        &>img {
+          width: 16px;
+          height: 22px;
+        }
+      }
+    }
+
+    &-desc {
+      margin-bottom: 30px;
+
+      &>p {
+        font-size: 16px;
+      }
+    }
+
+    &-outsourcing {
+      margin-bottom: 30px;
+
+      &-title {
+        &>h2 {
+          margin-top: 10px;
+          @include fontStyle(700, 18px, 22px, $primary-dark-color);
+        }
+
+        &>img {
+          width: 16px;
+          height: 22px;
+        }
+      }
+
+      &-list {
+        margin-top: 20px;
+        row-gap: 20px;
+
+        &-item {
+          gap: 20px;
+
+          &>img {
+            width: 30px;
+            height: 30px;
+          }
+
+          &>p {
+            @include fontStyle(500, 16px, 19px, $primary-dark-color);
+          }
+        }
+      }
+    }
+
+    &-forming {
+      margin-bottom: 30px;
+      flex-direction: column;
+
+      &>img {
+        margin-top: 30px;
+        width: 285px;
+        height: 249px;
+        object-fit: contain;
+      }
+
+      &-form {
+        margin: 0;
+        gap: 15px;
+
+        &-item {
+          gap: 15px;
+        }
+      }
+    }
+  }
+}
