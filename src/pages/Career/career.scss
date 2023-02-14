@@ -1,0 +1,207 @@
+@import "../../assets/style/global.scss";
+
+.career {
+  margin-top: 30px;
+
+  &-hero {
+    margin-bottom: 60px;
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/career-hero-background.jpg");
+
+    &-wrapper {
+      margin: 0 0 40px 30px;
+    }
+
+    &-title {
+      margin-top: 10px;
+      @include fontStyle(700, 36px, 43px, $primary-light-color);
+    }
+  }
+
+  &-main {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      width: 100%;
+      max-width: 400px;
+      margin-right: 50px;
+
+      &>h1 {
+        margin-top: 10px;
+        @include fontStyle(700, 34px, 41px, $primary-dark-color);
+      }
+    }
+
+    &-desc {
+      width: 100%;
+      max-width: 715px;
+      display: grid;
+      gap: 30px;
+
+      &-text>p {
+        @include fontStyle(400, 17px, 140%, $primary-dark-color);
+      }
+
+      &-vacancies {
+        &>p {
+          @include fontStyle(600, 18px, 140%, $primary-dark-color);
+        }
+
+        &>a {
+          color: #3D62E3;
+        }
+      }
+
+      &-parmanent-vacancies>p {
+        @include fontStyle(600, 18px, 140%, $primary-dark-color);
+      }
+
+      &-texnogies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-item {
+          width: 100%;
+          display: flex;
+          gap: 70px;
+
+          &-border {
+            height: 1px;
+            width: 98%;
+            margin: 11.5px 0;
+            background: #D9D9D9;
+          }
+
+          &-title {
+            display: flex;
+            align-items: center;
+
+            &>h4 {
+              @include fontStyle(600, 20px, 138%, $primary-green-color);
+            }
+          }
+
+          &-desc {
+            &>strong {
+              margin-bottom: 7.5px;
+              @include fontStyle(600, 18px, 138%, $primary-dark-color);
+            }
+
+            &>p {
+              @include fontStyle(400, 17px, 138%, #8B8B8B);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 916px) {
+  .career {
+    margin-top: 10px;
+
+    &-hero {
+      margin-bottom: 30px;
+      height: 300px;
+
+      &-wrapper {
+        margin: 0 0 15px 15px;
+      }
+
+      &-title {
+        @include fontStyle(700, 17px, 22px, $primary-light-color);
+      }
+    }
+
+    &-main {
+      flex-direction: column;
+
+      &-title {
+        max-width: 700px;
+        margin: 0 0 20px;
+
+        &>h1 {
+          @include fontStyle(700, 18px, 22px, $primary-dark-color);
+        }
+      }
+
+      &-desc {
+        display: grid;
+        gap: 0;
+
+        &-text {
+          margin-bottom: 20px;
+
+          &>p {
+            font-size: 16px
+          }
+        }
+
+        &-vacancies {
+          margin-bottom: 30px;
+
+          &>p {
+            @include fontStyle(700, 16px, 140%, $primary-dark-color);
+          }
+
+          &>a {
+            color: #3D62E3;
+          }
+        }
+
+        &-texnogies {
+          margin-top: 20px;
+
+          &-item {
+            gap: 20px;
+
+            &-border {
+              width: 100%;
+              margin: 15px 0;
+            }
+
+            &-title {
+              align-items: start;
+
+              &>h4 {
+                @include fontStyle(600, 18px, 138%, #000000);
+              }
+            }
+
+            &-desc {
+              &>strong {
+                margin-bottom: 5px;
+                font-size: 16px
+              }
+
+              &>p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  .career {
+    &-hero {
+      height: 220px;
+      border-radius: 15px;
+      background-image: url("../../assets/images/career-hero-background-mobile.jpg");
+    }
+  }
+}

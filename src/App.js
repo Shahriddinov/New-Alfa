@@ -6,9 +6,11 @@ import ScrollTop from "./hoc/ScrollTop";
 
 
 const Home = lazy(() => import("./pages/Home"));
+const Career = lazy(() => import("./pages/Career"));
 
 const routes = [
 	{ path: "", element: Home },
+	{ path: "career", element: Career },
 
 ]
 const RoutesContainer = () => (

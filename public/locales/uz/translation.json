@@ -16,5 +16,16 @@
     "partners": "Bizning hamkorlarimiz",
     "helper": "Yordam",
     "part_of_team": "Jamoaning bir qismi bo'ling"
+  },
+  "career": {
+    "title": "Karyerangizni biz bilan oshiring!",
+    "text": "Alfa-best professional faoliyatning turli sohalaridagi mutaxassislarni ishga taklif qiladi. Umumiy ovqatlanish, umumiy ovqatlanish, tozalash, texnik ekspluatatsiya, xizmat ko‘rsatish va yo‘lovchi tashish sohalarida bo‘sh ish o‘rinlari ochilgan.",
+    "vacancies": "Bizning bo'sh ish o'rinlarimiz (HH sahifasiga havola)",
+    "permanent_vacancies": "Doimiy bo'sh ish o'rinlari:",
+    "requirment": "Majburiy talab: navbatchilik asosida ishlash - Buxoro, Hisor",
+    "production": "Oziq-ovqat ishlab chiqarish texnologi",
+    "experience": "Kamida bir yillik tajriba va o'z ishiga mas'uliyat",
+    "cook": "Oshpaz",
+    "type_of_food": "Kamida bir yillik tajriba va sakkiz turdagi taomlarni tayyorlash imkoniyatiga ega bo‘lishi kerak"
   }
 }
