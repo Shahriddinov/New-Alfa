@@ -11,20 +11,20 @@ const About = lazy(() => import("./pages/About/about.jsx"))
 const routes = [
     { path: "", element: Home },
     { path: "/about", element: About }
-
 ]
+
 const RoutesContainer = () => (
 	<Router>
-			<Layout>
-				<Suspense fallback={<Spinner position="full" />}>
-					<Routes>
-						{routes.map((route, key) => {
-							const RouteComponent = ScrollTop(route.element);
-							return <Route key={key} path={route.path} element={<RouteComponent />} />;
-						})}
-					</Routes>
-				</Suspense>
-			</Layout>
+		<Layout>
+			<Suspense fallback={<Spinner position="full" />}>
+				<Routes>
+					{routes.map((route, key) => {
+						const RouteComponent = ScrollTop(route.element);
+						return <Route key={key} path={route.path} element={<RouteComponent />} />;
+					})}
+				</Routes>
+			</Suspense>
+		</Layout>
 	</Router>
 );
 
