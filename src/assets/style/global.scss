@@ -54,9 +54,39 @@ $primary-green-color: #28C79E;
     overflow: hidden;
 }
 
+%custom-heroWrapper {
+    width: 100%;
+    padding: 0 0 40px 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, rgba(0, 0, 0, 0.52) 71.51%);
+
+    &>h2 {
+        margin-top: 10px;
+        @include fontStyle(700, 36px, 43px, $primary-light-color);
+    }
+
+    &>img {
+        width: 20px;
+        height: 28px;
+        object-fit: contain;
+    }
+}
+
 @media screen and (max-width: 916px) {
     %custom-hero {
         height: 300px;
+    }
+
+    %custom-heroWrapper {
+        padding: 0 0 15px 15px;
+
+        &>h2 {
+            @include fontStyle(700, 17px, 22px, $primary-light-color);
+        }
+
+        &>img {
+            width: 16px;
+            height: 22px;
+        }
     }
 }
 
@@ -65,6 +95,7 @@ $primary-green-color: #28C79E;
         height: 220px;
         border-radius: 15px;
     }
+
 }
 
 %custom-button {
@@ -73,6 +104,7 @@ $primary-green-color: #28C79E;
     border-radius: 15px;
     border: none;
     background-color: $primary-green-color;
+    cursor: pointer;
 }
 
 // fonts

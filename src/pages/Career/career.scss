@@ -9,14 +9,7 @@
     background-image: url("../../assets/images/career-hero-background.jpg");
 
     &-wrapper {
-      width: 100%;
-      padding: 0 0 40px 30px;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, rgba(0, 0, 0, 0.52) 71.51%);
-    }
-
-    &-title {
-      margin-top: 10px;
-      @include fontStyle(700, 36px, 43px, $primary-light-color);
+      @extend %custom-heroWrapper;
     }
   }
 
@@ -108,19 +101,6 @@
 
     &-hero {
       margin-bottom: 30px;
-
-      &-wrapper {
-        padding: 0 0 15px 15px;
-
-        &>img {
-          width: 16px;
-          height: 22px;
-        }
-      }
-
-      &-title {
-        @include fontStyle(700, 17px, 22px, $primary-light-color);
-      }
     }
 
     &-main {
@@ -152,10 +132,6 @@
 
           &>p {
             @include fontStyle(700, 16px, 140%, $primary-dark-color);
-          }
-
-          &>a {
-            color: #3D62E3;
           }
         }
 

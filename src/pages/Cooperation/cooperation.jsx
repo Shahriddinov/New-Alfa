@@ -58,7 +58,7 @@ const Cooperation = () => {
             </label>
             <label htmlFor="" className="main-forming-form-item">
               <span>{t("cooperation.form.tell")}</span>
-              <input required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" type="tel" maxLength={50} minLength={3} value="+998" />
+              <input required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" type="tel" maxLength={50} minLength={3} placeholder="+998" />
             </label>
             <button className="main-forming-btn" type="submit">{t("send")}</button>
           </form>

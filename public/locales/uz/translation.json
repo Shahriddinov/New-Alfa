@@ -45,5 +45,16 @@
       "tell": "Telefon raqamingizni kiriting"
     }
   },
-  "send": "Yuborish"
+  "contacts": {
+    "text1": "Fikr-mulohaza shakli orqali bizga yozishingiz mumkin.",
+    "text2": "Biz sizning savolingizni mutaxassisga yo'naltiramiz, agar kerak bo'lsa, siz bilan bevosita bog'lanadi yoki javobni elektron pochta orqali yuboradi.",
+    "popup": {
+      "title": "Sizning arizangiz muvaffaqiyatli yuborildi.",
+      "desc": "Tez orada siz bilan bog'lanamiz"
+    }
+  },
+  "send": "Yuborish",
+  "telephone": "Telefon",
+  "address": "Адрес",
+  "address_text": "Toshkent sh. Shota Rustaveli, 156"
 }

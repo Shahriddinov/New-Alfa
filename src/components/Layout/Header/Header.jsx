@@ -67,7 +67,7 @@ const Header = () => {
 								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/career">{t("header.carery")}</NavLink>
 								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/shopping">{t("header.shopping")}</NavLink>
 								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/cooperation">{t("header.cooperation")}</NavLink>
-								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/contact">{t("header.contact")}</NavLink>
+								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/contacts">{t("header.contact")}</NavLink>
 								<div className="header-nav-list-services-bottom">
 									<div className="header-nav-list-services-bottom-title"><span>{t("header.follow")}</span></div>
 									<div className="header-nav-list-services-bottom-links">
