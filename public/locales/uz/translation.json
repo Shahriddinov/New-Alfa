@@ -56,5 +56,38 @@
   "send": "Yuborish",
   "telephone": "Telefon",
   "address": "Адрес",
-  "address_text": "Toshkent sh. Shota Rustaveli, 156"
+  "address_text": "Toshkent sh. Shota Rustaveli, 156",
+  "enginering": {
+    "top": {
+      "product_1": "Operatsion nazoratni tashkil etish: tizimlar, uskunalar va inshootlarni tekshirish, nazorat qilish, monitoring qilish",
+      "product_2": "Binolar va qurilish inshootlari va ularning muhandislik tizimlarini ekspluatatsiya qilish",
+      "product_3": "Binolar va qurilish inshootlarini kuz-qish va bahor-yoz davrlariga mavsumiy tayyorlash",
+      "product_4": "Muhandislik tizimlari, uskunalari va qurilish inshootlariga texnik xizmat ko'rsatish va joriy ta'mirlash",
+      "product_5": "Binolar, inshootlar, muhandislik tizimlari va jihozlarini joriy, o'rta va kapital ta'mirlash",
+      "product_6": "Favqulodda dispetcherlik xizmatini tashkil etish"
+    },
+    "bottom": {
+      "product_1": "Muhandislik va texnologik jihozlarning o'ziga xos xususiyatlarini bilish",
+      "product_2": "Barcha turdagi ko'chmas mulk sohasida tajriba",
+      "product_3": "Avtomatlashtirilgan texnik xizmat ko'rsatish va ta'mirlashni rejalashtirish tizimi",
+      "product_4": "Oldindan o'rnatilgan javob parametrlari va fikr-mulohazalarga ega 24 soatlik dispetcherlik markazi",
+      "product_5": "O'zimizning yuqori malakali mutaxassislarimiz va kompaniya bo'linmalari tomonidan xizmatlar ko'rsatish",
+      "product_6": "Ko'chmas mulkni saqlash va ekspluatatsiya qilishni tashkil etish uchun barcha zarur sertifikatlar va litsenziyalarning mavjudligi",
+      "product_7": "O'zining sertifikatlangan elektr laboratoriyasi",
+      "product_8": "Sifat nazoratining ichki auditi",
+      "product_9": "Veb-saytda va mobil ilovada mijozning shaxsiy kabineti"
+    }
+  },
+  "service": {
+    "text": "Alfabest - sanoat korxonalari, umumiy ovqatlanish ob'ektlari, savdo va biznes markazlari, ombor majmualari va texnoparklarga texnik xizmat ko'rsatish, tozalash, foydalanish va texnik xizmat ko'rsatish bo'yicha kompleks echimlarni taklif etadi. Biz xizmat ko'rsatishning yuqori standartlarini qo'llab-quvvatlaymiz va zamonaviy ekologik toza texnologiyalardan foydalangan holda innovatsion echimlarni amalga oshiramiz.",
+    "middle_hero": {
+      "title": "Hamkorlarimiz bizdan mamnun",
+      "desc": "Agar siz bizning xizmatlarimizga qiziqsangiz, bizning hamkorimiz bo'ling va premium xizmatlarga ega bo'ling",
+      "title_mobile": "Biz hamkorlarimiz bilan besh yildan beri birgamiz",
+      "desc_mobile": "Biz hamkorlarimiz bilan besh yildan beri muvaffaqiyatli ishlayapmiz. Endi bizda 10 dan ortiq mijozlar bor va siz ham biz bilan hamkorlik qilishga xush kelibsiz."
+    },
+    "bottom": {
+      "title": "Bizning afzalliklarimiz"
+    }
+  }
 }
