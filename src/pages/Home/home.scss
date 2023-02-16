@@ -407,11 +407,14 @@
                 &__wrapper{
                     display: flex;
                     margin-top: 16px;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 60px;
     
                     & > span {
-                        max-width: 21px;
-                        min-height: 28px;
-                        margin-right: 60px ;
+                        // max-width: 21px;
+                        // min-height: 28px;
+                        // margin-right: 60px ;
                         font-weight: 600;
                         font-size: 20px;
                         line-height: 28px;
@@ -427,10 +430,10 @@
                     }
     
                     & > p {
-                        max-width: 516px;
-                        min-height: 25px;
+                        flex-basis: 70%;// max-width: 516px;
+                        // min-height: 25px;
                         // margin-right: 100px;
-                        padding-right: 110px;
+                        // padding-right: 110px;
                         font-family: 400;
                         font-size: 18px;
                         line-height: 25px;

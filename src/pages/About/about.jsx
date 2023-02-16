@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './about.scss';
-import History from '../../components/Layout/History/History';
 import PhotoGallery from '../../components/Layout/photoGallery/photoGallery';
+import NewHistory from '../../components/Layout/newHistory/newHistory';
 
 
 
@@ -31,15 +31,12 @@ import lukoil from '../../assets/images/aboutPageImgs/lukoil.svg';
 import intel from '../../assets/images/aboutPageImgs/intel.svg';
 import ikea from '../../assets/images/aboutPageImgs/ikea.svg';
 
+import { useTranslation } from 'react-i18next';
 
-
-// section 7 carousel imgs
-import img1 from '../../assets/images/aboutPageImgs/carouselImg1.png';
-import img2 from '../../assets/images/aboutPageImgs/carouselImg2.png';
-import img3 from '../../assets/images/aboutPageImgs/carouselImg1.png';
-import img4 from '../../assets/images/aboutPageImgs/carouselImg2.png';
 
 const About = () => {
+
+    const {t} = useTranslation();
 
     const [x, setX] = useState(0);
 
@@ -70,13 +67,13 @@ const About = () => {
 
 
     let employeesContent = [ 
-        { url: emp1, name: 'Darobov Baxodirmirzo', jobTitle: 'Директор'}, 
-        { url: emp2, name: 'Darobov Baxodirmirzo', jobTitle: 'Менеджер'},  
-        { url: emp3, name: 'Darobov Baxodirmirzo', jobTitle: 'Бухгалтер'}, 
-        { url: emp4, name: 'Darobov Baxodirmirzo', jobTitle: 'Ux Ui designer'}, 
-        { url: emp3, name: 'Darobov Baxodirmirzo', jobTitle: 'Бухгалтер'}, 
-        { url: emp4, name: 'Darobov Baxodirmirzo', jobTitle: 'Бухгалтер'}, 
-        { url: emp3, name: 'Darobov Baxodirmirzo', jobTitle: 'Ux Ui designer'}, 
+        { url: emp1, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP1")}`}, 
+        { url: emp2, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP2")}`},  
+        { url: emp3, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP3")}`}, 
+        { url: emp4, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP2")}`}, 
+        { url: emp3, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP3")}`}, 
+        { url: emp4, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP2")}`}, 
+        { url: emp3, name: 'Darobov Baxodirmirzo', jobTitle: `${t("aboutPage.sectionFourP3")}`}, 
     ]
 
     const goLeft = () => {
@@ -160,20 +157,20 @@ const About = () => {
             <div className='about-section-container-one'>
                 <div className='about-section-container-one__wrapper'>
                     <img src={softLogo} alt="softLogo" />
-                    <h1>Профиль компании</h1>
+                    <h1>{t("aboutPage.secOneImgText")}</h1>
                 </div>
-                <p>Компания Альфа бест —оператор комплексного обслуживания вахтовых поселков на территории Республики Узбекистан Глубокие знания, разносторонний опыт и профессионализм наших сотрудников — это гарантия успехов во всех сферах деятельности, которыми занимается компания.. Наши задачи — обеспечить сервис высокого качества , снизить издержки, дать необходимый комфорт.</p>
+                <p>{t("aboutPage.secOnePText")}</p>
             </div>
 
             <div className='about-section-container-two'>
                 <div className='about-section-container-two__leftWrapper'>
                     <img src={box} alt="logo" />
-                    <h1>Наша миссия</h1>
-                    <p>Альфабест — предлагает комплексные решения по содержанию, клинингу, эксплуатации и техническому обслуживанию промышленных предприятий, объектов общественного питания, торговых и бизнес-центров, складских комплексов и технопарков. Мы поддерживаем высокие стандарты обслуживания и внедряем инновационные решения, применяя современные природосберегающие технологии.</p>
+                    <h1>{t("aboutPage.secTwoH")}</h1>
+                    <p>{t("aboutPage.secTwpP")}</p>
 
                 </div>
                 <div className='about-section-container-two__rightWrapper'>
-                    <h1><span>ALFABEST</span> <br/>ЕДИНЫЙ СЕРВИС НАЦИОНАЛЬНОГО МАСШТАБА</h1>
+                    <h1><span>ALFABEST</span> <br/>{t("aboutPage.secTwoHSecond")}</h1>
                 </div>
                 <img src={mirrorLogo} alt="mirrorLogo" />
             </div>  
@@ -181,26 +178,26 @@ const About = () => {
             <div className='about-section-container-three'>
                 <div className='about-section-container-three--container'>
                     <div className='about-section-container-three--container__wrapper'>
-                        <h1>Инженерно-техническая эксплуатация</h1>
-                        <a href="/">Подробно <img src={rightArrow} alt="arrow" /></a>
+                        <h1>{t("aboutPage.sectionThreeH1")}</h1>
+                        <a href="/">{t("aboutPage.sectionThreeP")} <img src={rightArrow} alt="arrow" /></a>
                         <img className='about-section-container-three--container__wrapper-img' src={engi} alt="engineering" />
                         {/* <img className='about-section-three--container__wrapper-rect' src={rect} alt="rect" /> */}
                     </div>
                     <div className='about-section-container-three--container__wrapper'>
-                        <h1>Сервисное и бытовое обслуживание</h1>
-                        <a href="/">Подробно <img src={rightArrow} alt="arrow" /></a>
+                        <h1>{t("aboutPage.sectionThreeH2")}</h1>
+                        <a href="/">{t("aboutPage.sectionThreeP")} <img src={rightArrow} alt="arrow" /></a>
                         <img className='about-section-container-three--container__wrapper-img' src={maint} alt="maintanance" />
                         {/* <img className='about-section-three--container__wrapper-rect' src={rect} alt="rect" /> */}
                     </div>
                     <div className='about-section-container-three--container__wrapper'>
-                        <h1>Корпоративное <br/> питание</h1>
-                        <a href="/">Подробно <img src={rightArrow} alt="arrow" /></a>
+                        <h1>{t("aboutPage.sectionThreeH3")} <br/> {t("aboutPage.sectionThreeH33")}</h1>
+                        <a href="/">{t("aboutPage.sectionThreeP")} <img src={rightArrow} alt="arrow" /></a>
                         <img className='about-section-container-three--container__wrapper-img' src={cater} alt="catering" />
                         {/* <img className='about-section-three--container__wrapper-rect' src={rect} alt="rect" /> */}
                     </div>
                     <div className='about-section-container-three--container__wrapper'>
-                        <h1>Транспортные и пассажирский перевозки</h1>
-                        <a href="/">Подробно <img src={rightArrow} alt="arrow" /></a>
+                        <h1>{t("aboutPage.sectionThreeH4")}</h1>
+                        <a href="/">{t("aboutPage.sectionThreeP")} <img src={rightArrow} alt="arrow" /></a>
                         <img className='about-section-container-three--container__wrapper-img' src={shipping} alt="shipping" />
                         {/* <img className='about-section-three--container__wrapper-rect' src={rect} alt="rect" /> */}
                     </div>
@@ -211,7 +208,7 @@ const About = () => {
                 <div className='about-section-container-four__wrapper'>
                     <div className='about-section-container-four__wrapper-right'>
                         <img  src={box} alt="logo" />
-                        <h1>Наша команда</h1>
+                        <h1>{t("aboutPage.sectionFourH")}</h1>
                     </div>
                     <div className='about-section-container-four__wrapper-left'>
                         <button onClick={goLeft}><img src={leftArrow} alt="leftArrow" /></button>
@@ -238,9 +235,9 @@ const About = () => {
             <div className="about-section-five__image"></div>
             <div className="about-section-five__wrapper">
                 <img src={logo} alt="logo" />
-                <h1>Мы с нашими партнерами уже пять лет</h1>
+                <h1>{t("aboutPage.sectionFiveH")}</h1>
                 <div className="about-section-five__wrapper__horizontalLine"></div>
-                <p>Мы успешно работаем с нашими партнерами уже пять лет. Теперь у нас более 10 клиентов, и вы также можете сотрудничать с нами.</p>
+                <p>{t("aboutPage.sectionFiveP")}</p>
             </div>
         </div>
 
@@ -319,7 +316,7 @@ const About = () => {
         </div> */}
         
         <PhotoGallery />
-        <History/>
+        <NewHistory/>
     </div>
   )
 }

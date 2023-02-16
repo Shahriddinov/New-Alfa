@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import './History.scss';
 import meeting2 from '../../../assets/images/meeting2.png';
 import rightArrow from '../../../assets/images/rightArrow.png';
@@ -84,29 +84,31 @@ const History = () => {
 
 
   return (
-    <div className="section-five">
-        <div className='section-five__wrapper'>
-            <div className="section-five__wrapper__left">
-                <img className="section-five__wrapper__left__logo" src={box} alt="logo" />
+    <div className="history-container">
+        <div className='history-container-top'>
+            <div className='history-container-top__left'>
+                <img  src={box} alt="logo" />
                 <h1>История</h1>
-                <img className="section-five__wrapper__left__meet" src={meeting2} alt="meeting" />
             </div>
+            <div className='history-container-top__right'>
+                <button onClick={goLeft}><img src={leftArrow} alt="leftArrow" /></button>
+                <button onClick={goRight}><img src={rightArrow} alt="rightArrow" /></button>
+            </div>
+        </div>
 
-            <div className="section-five__wrapper__right">
-                <div className="section-five__wrapper__right__pointer">
-                    <button onClick={goLeft} className="section-five__wrapper__right__pointer-left"><img src={leftArrow} alt="leftArrow" /></button>
-                    <button onClick={goRight} className="section-five__wrapper__right__pointer-right"><img src={rightArrow} alt="rightArrow" /></button>
-                </div>
+        <div className='history-container-bottom'>
+            <img src={meeting2} alt="meeting" />
+            <div className='history-container-bottom__right'>
                 <h1>{state.activeObject.year}</h1>
                 <p>{state.activeObject.text}</p>
-                <div className="section-five__wrapper__right__dates">
+                <div className="history-container-bottom__right-years">
                     {state.objects.map((element, index) => (
                         <h1 key={index} onClick={(e) => contentHandler(e, index)} className={toggleActive(index)}>{element.year}</h1>
                     ))}
                 </div>
             </div>
-
         </div>
+
     </div>
   )
 }

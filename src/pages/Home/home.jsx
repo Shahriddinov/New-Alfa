@@ -1,7 +1,7 @@
 import React from "react";
 import './home.scss';
 
-import History from '../../components/Layout/History/History';
+import NewHistory from '../../components/Layout/newHistory/newHistory';
 
 import cheff from '../../assets/images/cheff.png';
 import box from '../../assets/images/box.png';
@@ -23,14 +23,7 @@ import img3 from '../../assets/images/img4x3.png'
 import img4 from '../../assets/images/img4x4.png';
 import { useState } from "react";
 import { useEffect } from "react";
-
-
-
-
-  
-
-
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -39,6 +32,8 @@ import { useEffect } from "react";
 const Home = ()=>{
 
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
+    const { t } = useTranslation();
 
     const slides = [
         {id: 1, url: img1},
@@ -81,7 +76,7 @@ const Home = ()=>{
         return 'section-zero__dotsContainer-dots'
     }
 
-    // const { t } = useTranslation();
+   
 
 return(
     <div className="section">
@@ -96,8 +91,8 @@ return(
             </div>
             <div className="section-zero__wrapper">
                 <img src={softLogo} alt="logo" />
-                <h1>Корпоративного питания и инженерно-технической эксплуатации</h1> 
-                <button>Узнать больше</button>     
+                <h1>{t("homePage.catering")}</h1> 
+                <button>{t("homePage.more")}</button>     
             </div>
         </div>
 
@@ -106,9 +101,9 @@ return(
                 <img className="section-sections-one__image" src={cheff} alt="cheffImage" />
                 <div className="section-sections-one__wrapper">
                     <img className="section-sections-one__img2" src={box} alt="box" />
-                    <h1 className="section-sections-one__heading">о нашей компании</h1>
-                    <p className="section-sections-one__text">Компания Альфа бест —оператор комплексного обслуживания вахтовых поселков на территории Республики Узбекистан Глубокие знания, разносторонний опыт и профессионализм наших сотрудников — это гарантия успехов во всех сферах деятельности, которыми занимается компания.. Наши задачи — обеспечить сервис высокого качества , снизить издержки, дать необходимый комфорт. Основным заказчиком услуг Компании на протяжении пяти лет является ПАО ЛУКойл что само по себе говорит о качестве наших услуг</p>
-                    <button className="section-sections-one__btn">Узнать больше</button>
+                    <h1 className="section-sections-one__heading">{t("homePage.about")}</h1>
+                    <p className="section-sections-one__text">{t("homePage.company")}</p>
+                    <button className="section-sections-one__btn">{t("homePage.more")}</button>
                 </div>
             </div>
 
@@ -117,30 +112,30 @@ return(
                 <div className="section-sections-two__wrapper">
                     <div className="section-sections-two__wrapper-inner">
                         <img src={map} alt="map" />
-                        <p>+320.000 <span>кв.м²</span></p>
+                        <p>+320.000 <span>{t("homePage.space")}</span></p>
                     </div>
-                    <p>Площади объектов <br/> благоустройства</p>
+                    <p>{t("homePage.place")}<br/> {t("homePage.improvement")}</p>
                 </div>
                 <div className="section-sections-two__wrapper">
                     <div  className="section-sections-two__wrapper-inner">
                         <img src={place} alt="place" />
-                        <p>+70.000 <span>кв.м²</span></p>
+                        <p>+70.000 <span>{t("homePage.space")}</span></p>
                     </div>
-                    <p>Площади объектов <br/> клининга</p>
+                    <p>{t("homePage.place")} <br/> {t("homePage.cleaning")}</p>
                 </div>
                 <div className="section-sections-two__wrapper">
                     <div  className="section-sections-two__wrapper-inner">
                         <img src={triers} alt="triers" />
                         <p>+1000</p>
                     </div>
-                    <p>Питающихся</p>
+                    <p>{t("homePage.eating")}</p>
                 </div>
                 <div className="section-sections-two__wrapper">
                     <div  className="section-sections-two__wrapper-inner">
                         <img src={jobs} alt="jobs" />
                         <p>+500</p>
                     </div>
-                    <p>Сотрудников</p>
+                    <p>{t("homePage.employees")}</p>
                 </div>
             </div>
 
@@ -148,35 +143,35 @@ return(
             <div className="section-sections-three">
                 <div className="section-sections-three-left">
                     <img src={box} alt="box" />
-                    <h1>Наша <span>цель</span></h1>
-                    <p>Альфабест — предлагает комплексные решения по содержанию, клинингу, эксплуатации и техническому обслуживанию промышленных предприятий, объектов общественного питания, торговых и бизнес-центров, складских комплексов и технопарков. Мы поддерживаем высокие стандарты обслуживания и внедряем инновационные решения, применяя современные природосберегающие технологии.</p>
+                    <h1>{t("homePage.our")} <span>{t("homePage.aim")}</span></h1>
+                    <p>{t("homePage.aboutAlfa")}</p>
                 </div>
 
                 <div className="section-sections-three-right">
                     <div className="section-sections-three-right__wrapper">
                         <span>01</span>
-                        <p>Сокращение издержек за счет оптимизации процессов</p>
+                        <p>{t("homePage.costReduction")}</p>
                         <img src={colligues1} alt="colligues" />
                     </div>
                     <div className="section-sections-three-right__horizontalLine"></div>
 
                     <div className="section-sections-three-right__wrapper">
                         <span>02</span>
-                        <p>Улучшение качества услуг за счет привлечения </p>
+                        <p>{t("homePage.improvingQuality")} </p>
                         <img src={colligues2} alt="colligues" />
                     </div>
                     <div className="section-sections-three-right__horizontalLine"></div>
 
                     <div className="section-sections-three-right__wrapper">
                         <span>03</span>
-                        <p>Концентрация усилий управленческой команды на основной деятельности</p>
+                        <p>{t("homePage.effort")}</p>
                         <img src={colligues3} alt="colligues" />
                     </div>
                     <div className="section-sections-three-right__horizontalLine"></div>
 
                     <div className="section-sections-three-right__wrapper">
                         <span>04</span>
-                        <p>Адаптированные под ваши потребности меню и услуги Основные этапы заключения договора</p>
+                        <p>{t("homePage.menuServices")}</p>
                         <img src={colligues4} alt="colligues" />
                     </div>
                     <div className="section-sections-three-right__horizontalLine"></div>
@@ -192,15 +187,16 @@ return(
             <div className="section-four__image"></div>
             <div className="section-four__wrapper">
                 <img src={logo} alt="logo" />
-                <h1>Наши партнеры довольны нами</h1>
+                <h1>{t("homePage.partners")}</h1>
                 <div className="section-four__wrapper__horizontalLine"></div>
-                <p>Если вас заинтересовали наши услуги, станьте нашим партнером и получите премиальные услуги</p>
+                <p>{t("homePage.becomePartner")}</p>
             </div>
         </div>
 
 
 
-        <History />
+        <NewHistory />
+
 
     </div>
 )

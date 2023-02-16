@@ -11,7 +11,11 @@ import box from '../../../assets/images/box.png';
 import leftArrow from '../../../assets/images/leftArrow.png';
 import rightArrow from '../../../assets/images/rightArrow.png';
 
+import { useTranslation } from 'react-i18next';
+
 const PhotoGallery = () => {
+
+    const {t} = useTranslation()
 
     const [x, setX] = useState(0);
 
@@ -30,7 +34,7 @@ const PhotoGallery = () => {
         <div className='about-section-seven__wrapper'>
             <div className='about-section-seven__wrapper-right'>
                 <img  src={box} alt="logo" />
-                <h1>Фотогалерея</h1>
+                <h1>{t("aboutPage.photoGallery")}</h1>
             </div>
             <div className='about-section-seven__wrapper-left'>
                 <button onClick={goLeft}><img src={leftArrow} alt="leftArrow" /></button>

@@ -120,8 +120,8 @@
                 }
     
                 & > h1{
-                    width: 221px;
-                    height: 41px;
+                    // width: 221px;
+                    // height: 41px;
                     font-weight: 700;
                     font-size: 34px;
                     line-height: 41px;
@@ -129,8 +129,8 @@
                     margin-top: 10px;
     
                     @include respond(phone){
-                        width: 166px;
-                        height: 22px;
+                        // width: 166px;
+                        // height: 22px;
                         font-size: 18px;
                         line-height: 22px;
                     }
@@ -348,15 +348,15 @@
     
                     & > h1 {
                         margin-top: 10px;
-                        width: 246px;
-                        height: 41px;
+                        // width: 246px;
+                        // height: 41px;
                         font-weight: 700;
                         font-size: 34px;
                         line-height: 41px;
                         color: $secondaryTextColor;
              
                          @include respond(phone){
-                             width: 166px;
+                            //  width: 166px;
                              font-size: 18px;
                              line-height: 22px;
                          } 

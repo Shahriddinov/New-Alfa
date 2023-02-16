@@ -23,8 +23,8 @@
 
         &-right{
             & > img{
-                width: 20px;
-                height: 28px;    
+                // width: 20px;
+                // height: 28px;    
                 
                  @include respond(phone){
                      width: 16px;
@@ -35,8 +35,6 @@
 
             & > h1 {
                 margin-top: 10px;
-                width: 140px;
-                height: 41px;
                 font-weight: 700;
                 font-size: 34px;
                 line-height: 41px;
@@ -44,7 +42,6 @@
      
                  @include respond(phone){
                      margin-top: 10px ;
-                     width: 117px;
                      font-size: 18px;
                      line-height: 22px;
                  } 
