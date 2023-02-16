@@ -60,7 +60,7 @@ const Header = () => {
 									</div>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/services">{t("header.service")}</NavLink>
-									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate">{t("header.corporate")}</NavLink>
+									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate-catering">{t("header.corporate")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/transportation">{t("header.transportation")}</NavLink>
 								</div>
 								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/aboutus">{t("header.about_company")}</NavLink>
@@ -113,7 +113,7 @@ const Header = () => {
 					<nav className="header-bottom">
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/service">{t("header.service")}</NavLink>
-						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corparete">{t("header.corporate")}</NavLink>
+						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate-catering">{t("header.corporate")}</NavLink>
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/transportation">{t("header.transportation")}</NavLink>
 					</nav>
 				</div>

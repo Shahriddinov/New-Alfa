@@ -78,6 +78,63 @@
       "product_9": "Veb-saytda va mobil ilovada mijozning shaxsiy kabineti"
     }
   },
+  "servicePage": {
+    "top": {
+      "product_1": "Ofis tozalash",
+      "product_2": "Sanoat binolarini tozalash",
+      "product_3": "Sanoat uskunalarini yuvish",
+      "product_4": "Qo'shni hududlarni tozalash",
+      "product_5": "Obodonlashtirish va ko‘kalamzorlashtirish",
+      "product_6": "Mavsumiy tozalash ishlari",
+      "product_7": "Sanoat alpinizmi va baland tog'larda ishlash",
+      "product_8": "Binolar va hududlarni dezinfeksiya qilish",
+      "product_9": "Muhandislik-texnik kommunikatsiya tizimlarini tozalash",
+      "product_10": "Deratizatsiya",
+      "product_11": "Chiqindilarni olib tashlash va yo'q qilish"
+    },
+    "bottom": {
+      "product_1": "O'zbekiston Respublikasining butun hududida xizmatlar ko'rsatish",
+      "product_2": "Barcha turdagi ko'chmas mulk sohasida tajriba",
+      "product_3": "Shaxsiy kadrlar tayyorlash tizimi",
+      "product_4": "Samarali nazorat tizimi va xodimlarning harakatlari uchun sug'urtalangan javobgarlik",
+      "product_5": "Ishning xavfsizligi va samaradorligini ta'minlaydigan professional kimyoviy moddalar va uskunalardan foydalanish",
+      "product_6": "Ularning xavfsizligini kafolatlaydigan professional qoplama parvarishi"
+    }
+  },
+  "corporatePage": {
+    "title_text": "Alpha - bu ovqatlanish uchun tajribali pudratchi. Ishlab chiqarish quvvatlari va jamoaning professionalligi sizning xodimlaringiz uchun chinakam qulay va qulay ovqatlanish xonalarini yaratishga yordam beradi.",
+    "top": {
+      "product_1": "Korporativ ovqatlanish: oshxonalar, bufetlar, pazandachilik",
+      "product_2": "Biznes ovqatlanish: korporativ kafe, qahvaxona",
+      "product_3": "Maktabgacha ta'lim muassasalarida, maktablarda, universitetlarda, sog'liqni saqlash muassasalarida ijtimoiy ovqatlanish",
+      "product_4": "Uzoq joylarda oziq-ovqat yetkazib berish, oziq-ovqat ratsioni bilan avtomatlar",
+      "product_5": "Bayram tadbirlarini tashkil etish"
+    },
+    "bottom": {
+      "product_1": "Uch bosqichli sifat nazorati tizimi",
+      "product_2": "24/7 Ishonch telefoni",
+      "product_3": "Har bir mijoz uchun alohida menyu ishlab chiqish",
+      "product_4": "Menyuning aylanishi va mavsumiy mahsulotlardan foydalanish",
+      "product_5": "Muntazam tematik tadbirlarni tashkil etish: milliy oshxona kunlari, korporativ bayramlar",
+      "product_6": "Yarim tayyor mahsulotlar ishlab chiqarish uchun bo'sh tsexlar",
+      "product_7": "Oziq-ovqat do'konlari uchun individual kontseptsiyalarni ishlab chiqish: ko'rgazmali pishirish stantsiyalari, o'z-o'ziga xizmat ko'rsatish, tarqatish liniyasi orqali xizmat ko'rsatish, ofitsiantlar xizmati"
+    }
+  },
+  "transportation": {
+    "title": "Yo'lovchi tashish",
+    "title_text": "Kompaniya 2017 yildan beri yo‘lovchi tashish xizmatlarini ko‘rsatib kelmoqda. Biz har bir mijozga kafolat berishga tayyormiz. Dastlab kompaniya davlat korxonalarida mavjud bo'lgan yo'lovchi tashish xavfsizligini tashkil etish tizimini asos qilib oldi. Bizning parkimizda turli o'lchamdagi avtobuslarning keng assortimenti mavjud: mikroavtobuslardan 50 o'rinli avtobuslargacha.",
+    "top": {
+      "product_title": "Tizim uchta asosiy komponentga qisqartiriladi.",
+      "product_1": "Haydovchi kadrlar - professional tanlash va marshrutga chiqishdan oldin tayyorgarlik, sayohatdan oldin va safardan keyingi tibbiy ko'rik.",
+      "product_2": "Nazorat va malaka oshirish tizimi – yo‘l harakati qoidalarini bilish darajasini har yili majburiy monitoringi tashkil etildi.",
+      "product_3": "Uskunalar - liniyaga kirishdan oldin va parkga kelgandan keyin texnik holatni majburiy tekshirish, ishlab chiqaruvchilar tomonidan sertifikatlangan ta'mirlash zonalarini tashkil etish."
+    },
+    "bottom": {
+      "product_1": "Yo'lovchilarning yuqori darajadagi qulayligi",
+      "product_2": "Safar davomida xavfsizlik",
+      "product_3": "Transportni qat'iy ravishda kelishilgan vaqt va joyda yetkazib berish."
+    }
+  },
   "service": {
     "text": "Alfabest - sanoat korxonalari, umumiy ovqatlanish ob'ektlari, savdo va biznes markazlari, ombor majmualari va texnoparklarga texnik xizmat ko'rsatish, tozalash, foydalanish va texnik xizmat ko'rsatish bo'yicha kompleks echimlarni taklif etadi. Biz xizmat ko'rsatishning yuqori standartlarini qo'llab-quvvatlaymiz va zamonaviy ekologik toza texnologiyalardan foydalangan holda innovatsion echimlarni amalga oshiramiz.",
     "middle_hero": {
