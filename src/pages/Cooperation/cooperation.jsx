@@ -32,15 +32,15 @@ const Cooperation = () => {
             </div>
             <div className="main-outsourcing-list-item">
               <img src={tracedVektor} alt="error" />
-              <p>{t("cooperation.outsourcing.1")}</p>
+              <p>{t("cooperation.outsourcing.2")}</p>
             </div>
             <div className="main-outsourcing-list-item">
               <img src={tracedVektor} alt="error" />
-              <p>{t("cooperation.outsourcing.1")}</p>
+              <p>{t("cooperation.outsourcing.3")}</p>
             </div>
             <div className="main-outsourcing-list-item">
               <img src={tracedVektor} alt="error" />
-              <p>{t("cooperation.outsourcing.1")}</p>
+              <p>{t("cooperation.outsourcing.4")}</p>
             </div>
           </div>
         </div>
