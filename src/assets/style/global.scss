@@ -5,6 +5,7 @@
     font-family: "Exo 2";
     font-style: normal;
     text-decoration: none;
+    z-index: 3;
 }
 
 body {
@@ -170,13 +171,13 @@ $primary-green-color: #28C79E;
 
 @mixin respond($breakpoint){
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) {@content};
+        @media only screen and (max-width: 50em) {@content};
     }
     @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) {@content};
+        @media only screen and (max-width: 72em) {@content};
     }
     @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) {@content};
+        @media only screen and (max-width: 89em) {@content};
     }
     @if $breakpoint == big-desktop {
         @media only screen and (max-width: 112.5em) {@content};

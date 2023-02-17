@@ -73,6 +73,11 @@
         justify-content: center;
         gap: 120px;
 
+        @include respond(tab-port){
+            flex-direction: column;
+            gap: 20px;
+        }
+
         @include respond(phone){
             margin: 20px 16px 0 16px;
             flex-direction: column;
@@ -80,6 +85,13 @@
         }
         & > img{
             max-height: 320px;
+
+
+            @include respond(tab-port){
+                object-fit: cover;
+                border-radius: 15px;
+            }
+    
             @include respond(phone){
                 width: 343px;
                 height: 210px;
@@ -107,6 +119,11 @@
                 line-height: 24px;
                 min-height: 192px;
                 color: #1B2330;
+
+                @include respond(tab-port){
+                    min-height: auto;
+                }
+        
 
                 @include respond(phone){
                     font-size: 16px;

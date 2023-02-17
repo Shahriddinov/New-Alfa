@@ -15,13 +15,14 @@
         margin: auto;
     
         @include respond(phone){
-            width: 375px;   
+            width: 100%;  
         }
 
         &-one{
             margin: 32px 90px 0 90px;
             @include respond(phone){
-               margin: 10px 16px 0px 16px; 
+               margin: 10px 0 0 0;
+               padding: 0 16px; 
             }
     
             &__wrapper{
@@ -33,7 +34,8 @@
     
                 @include respond(phone){
                     background-image: url(../../assets//images/aboutPageImgs/compMainMobile.png);
-                    width: 343px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     height: 220px;
                     border-radius: 15px;
                 }
@@ -65,8 +67,8 @@
                     color: #FFFFFF;
     
                     @include respond(phone){
-                        min-width: 166px;
-                        height: 22px;
+                        // min-width: 166px;
+                        // height: 22px;
                         font-size: 18px;
                         line-height: 22px;
                         top: 183px;
@@ -86,8 +88,8 @@
     
                 @include respond(phone){
                     margin-top: 20px;
-                    width: 343px;
-                    height: 242px;
+                    // width: 343px;
+                    // height: 242px;
                     font-size: 16px;
                     line-height: 22px;
                 }
@@ -146,8 +148,8 @@
                     margin-top: 20px;
     
                     @include respond(phone){
-                        width: 343px;
-                        height: 242px;
+                        // width: 343px;
+                        // height: 242px;
                         font-size: 16px;
                         line-height: 22px;
                     }
@@ -204,18 +206,29 @@
         // /// three ///////////////////////
         &-three{
             margin: 60px 90px 0 90px;
+
+    
     
             @include respond(phone){
-                margin: 30px 16px 0 16px;
+                margin: 30px 0 0 0;
+                padding: 0 16px;
             }
     
             &--container{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 60px;
+
+                @include respond(tab-land){
+                    align-items: center;
+                    flex-direction: column;
+                    row-gap: 20px;
+                }
     
                 @include respond(phone){
-                    gap: 20px;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    row-gap: 20px;
                 }
                 &__wrapper{ 
                     box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.08);
@@ -224,10 +237,22 @@
                     height: 250px;
                     background: #FFFFFF;
                     position: relative;
+
+                    @include respond(tab-land){
+                        gap: 20px;
+                        width: 80%;
+                        // height: 200px;
+                    }
+
+                    @include respond(phone){
+                        gap: 20px;
+                        width: 100%;
+                        height: 200px;
+                    }
     
                     @include respond(phone){
                         gap: 20px;
-                        width: 343px;
+                        width: 100%;
                         height: 200px;
                     }
                     & > h1{
@@ -260,7 +285,11 @@
                         color: #1B2330;
                         font-size: 17px;
                         line-height: 24px;
-    
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+
                         @include respond(phone){
                             margin-top: 20px;
                             margin-left: 15px;
@@ -321,7 +350,8 @@
             margin: 60px 90px 0 90px;
     
             @include respond(phone){
-                margin: 30px 0px 0 16px;
+                margin: 30px 0 0 0;
+                padding: 0 16px;
             }
     
     
@@ -491,7 +521,6 @@
             background-size: cover;
 
             @include respond(phone){
-                // width: 375px;
                 height: 300px;
                 background-image: url(../../assets/images/meetingMobile.png);
             }
