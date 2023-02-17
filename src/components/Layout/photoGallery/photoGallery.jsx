@@ -3,8 +3,10 @@ import './photoGallery.scss';
 
 import img1 from '../../../assets/images/aboutPageImgs/carouselImg1.png';
 import img2 from '../../../assets/images/aboutPageImgs/carouselImg2.png';
-import img3 from '../../../assets/images/aboutPageImgs/carouselImg1.png';
-import img4 from '../../../assets/images/aboutPageImgs/carouselImg2.png';
+import img3 from '../../../assets/images/aboutPageImgs/carouselImg3.png';
+import img4 from '../../../assets/images/aboutPageImgs/carouselImg4.png';
+import img5 from '../../../assets/images/aboutPageImgs/carouselImg5.png';
+import img6 from '../../../assets/images/aboutPageImgs/carouselImg6.png';
 
 import box from '../../../assets/images/box.png';
 
@@ -19,7 +21,7 @@ const PhotoGallery = () => {
 
     const [x, setX] = useState(0);
 
-    let arrContent = [ { url: img1}, {url: img2}, {url:img3}, {url:img4}]
+    let arrContent = [ { url: img1}, {url: img2}, {url:img3}, {url:img4}, {url:img5}, {url:img6}]
 
     const goLeft = () => {
         x === 0 ? setX(0): setX(x + 70)    

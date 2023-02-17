@@ -70,6 +70,136 @@
     "partners": "Bizning hamkorlarimiz",
     "helper": "Yordam",
     "part_of_team": "Jamoaning bir qismi bo'ling"
+  },
+  "career": {
+    "title": "Karyerangizni biz bilan oshiring!",
+    "text": "Alfa-best professional faoliyatning turli sohalaridagi mutaxassislarni ishga taklif qiladi. Umumiy ovqatlanish, umumiy ovqatlanish, tozalash, texnik ekspluatatsiya, xizmat ko‘rsatish va yo‘lovchi tashish sohalarida bo‘sh ish o‘rinlari ochilgan.",
+    "vacancies": "Bizning bo'sh ish o'rinlarimiz (HH sahifasiga havola)",
+    "permanent_vacancies": "Doimiy bo'sh ish o'rinlari:",
+    "requirment": "Majburiy talab: navbatchilik asosida ishlash - Buxoro, Hisor",
+    "production": "Oziq-ovqat ishlab chiqarish texnologi",
+    "experience": "Kamida bir yillik tajriba va o'z ishiga mas'uliyat",
+    "cook": "Oshpaz",
+    "type_of_food": "Kamida bir yillik tajriba va sakkiz turdagi taomlarni tayyorlash imkoniyatiga ega bo‘lishi kerak"
+  },
+  "cooperation": {
+    "desc": "Alfa-best kompaniyasi sanoat korxonalari, savdo markazlari, yirik va o'rta kompaniyalar bilan kompleks xizmatlar sohasida hamkorlik qilishdan mamnun bo'ladi.",
+    "outsourcing": {
+      "text": "Autsorsingning asosiy afzalliklari",
+      "1": "Jarayonni optimallashtirish orqali xarajatlarni kamaytirish",
+      "2": "Sizning ehtiyojlaringizga moslashtirilgan menyu va xizmatlar",
+      "3": "Malakali tajribali pudratchini jalb qilish orqali xizmatlar sifatini oshirish",
+      "4": "Boshqaruv jamoasining sa'y-harakatlarini asosiy faoliyatga jamlash"
+    },
+    "form": {
+      "service": "Xizmat turini tanlang",
+      "input": "Korporativ ovqatlanish",
+      "full_name": "Toʻliq ismingizni kiriting",
+      "name": "Ism, familiya",
+      "tell": "Telefon raqamingizni kiriting"
+    }
+  },
+  "contacts": {
+    "text1": "Fikr-mulohaza shakli orqali bizga yozishingiz mumkin.",
+    "text2": "Biz sizning savolingizni mutaxassisga yo'naltiramiz, agar kerak bo'lsa, siz bilan bevosita bog'lanadi yoki javobni elektron pochta orqali yuboradi.",
+    "popup": {
+      "title": "Sizning arizangiz muvaffaqiyatli yuborildi.",
+      "desc": "Tez orada siz bilan bog'lanamiz"
+    }
+  },
+  "send": "Yuborish",
+  "telephone": "Telefon",
+  "address": "Адрес",
+  "address_text": "Toshkent sh. Shota Rustaveli, 156",
+  "enginering": {
+    "top": {
+      "product_1": "Operatsion nazoratni tashkil etish: tizimlar, uskunalar va inshootlarni tekshirish, nazorat qilish, monitoring qilish",
+      "product_2": "Binolar va qurilish inshootlari va ularning muhandislik tizimlarini ekspluatatsiya qilish",
+      "product_3": "Binolar va qurilish inshootlarini kuz-qish va bahor-yoz davrlariga mavsumiy tayyorlash",
+      "product_4": "Muhandislik tizimlari, uskunalari va qurilish inshootlariga texnik xizmat ko'rsatish va joriy ta'mirlash",
+      "product_5": "Binolar, inshootlar, muhandislik tizimlari va jihozlarini joriy, o'rta va kapital ta'mirlash",
+      "product_6": "Favqulodda dispetcherlik xizmatini tashkil etish"
+    },
+    "bottom": {
+      "product_1": "Muhandislik va texnologik jihozlarning o'ziga xos xususiyatlarini bilish",
+      "product_2": "Barcha turdagi ko'chmas mulk sohasida tajriba",
+      "product_3": "Avtomatlashtirilgan texnik xizmat ko'rsatish va ta'mirlashni rejalashtirish tizimi",
+      "product_4": "Oldindan o'rnatilgan javob parametrlari va fikr-mulohazalarga ega 24 soatlik dispetcherlik markazi",
+      "product_5": "O'zimizning yuqori malakali mutaxassislarimiz va kompaniya bo'linmalari tomonidan xizmatlar ko'rsatish",
+      "product_6": "Ko'chmas mulkni saqlash va ekspluatatsiya qilishni tashkil etish uchun barcha zarur sertifikatlar va litsenziyalarning mavjudligi",
+      "product_7": "O'zining sertifikatlangan elektr laboratoriyasi",
+      "product_8": "Sifat nazoratining ichki auditi",
+      "product_9": "Veb-saytda va mobil ilovada mijozning shaxsiy kabineti"
+    }
+  },
+  "servicePage": {
+    "top": {
+      "product_1": "Ofis tozalash",
+      "product_2": "Sanoat binolarini tozalash",
+      "product_3": "Sanoat uskunalarini yuvish",
+      "product_4": "Qo'shni hududlarni tozalash",
+      "product_5": "Obodonlashtirish va ko‘kalamzorlashtirish",
+      "product_6": "Mavsumiy tozalash ishlari",
+      "product_7": "Sanoat alpinizmi va baland tog'larda ishlash",
+      "product_8": "Binolar va hududlarni dezinfeksiya qilish",
+      "product_9": "Muhandislik-texnik kommunikatsiya tizimlarini tozalash",
+      "product_10": "Deratizatsiya",
+      "product_11": "Chiqindilarni olib tashlash va yo'q qilish"
+    },
+    "bottom": {
+      "product_1": "O'zbekiston Respublikasining butun hududida xizmatlar ko'rsatish",
+      "product_2": "Barcha turdagi ko'chmas mulk sohasida tajriba",
+      "product_3": "Shaxsiy kadrlar tayyorlash tizimi",
+      "product_4": "Samarali nazorat tizimi va xodimlarning harakatlari uchun sug'urtalangan javobgarlik",
+      "product_5": "Ishning xavfsizligi va samaradorligini ta'minlaydigan professional kimyoviy moddalar va uskunalardan foydalanish",
+      "product_6": "Ularning xavfsizligini kafolatlaydigan professional qoplama parvarishi"
+    }
+  },
+  "corporatePage": {
+    "title_text": "Alpha - bu ovqatlanish uchun tajribali pudratchi. Ishlab chiqarish quvvatlari va jamoaning professionalligi sizning xodimlaringiz uchun chinakam qulay va qulay ovqatlanish xonalarini yaratishga yordam beradi.",
+    "top": {
+      "product_1": "Korporativ ovqatlanish: oshxonalar, bufetlar, pazandachilik",
+      "product_2": "Biznes ovqatlanish: korporativ kafe, qahvaxona",
+      "product_3": "Maktabgacha ta'lim muassasalarida, maktablarda, universitetlarda, sog'liqni saqlash muassasalarida ijtimoiy ovqatlanish",
+      "product_4": "Uzoq joylarda oziq-ovqat yetkazib berish, oziq-ovqat ratsioni bilan avtomatlar",
+      "product_5": "Bayram tadbirlarini tashkil etish"
+    },
+    "bottom": {
+      "product_1": "Uch bosqichli sifat nazorati tizimi",
+      "product_2": "24/7 Ishonch telefoni",
+      "product_3": "Har bir mijoz uchun alohida menyu ishlab chiqish",
+      "product_4": "Menyuning aylanishi va mavsumiy mahsulotlardan foydalanish",
+      "product_5": "Muntazam tematik tadbirlarni tashkil etish: milliy oshxona kunlari, korporativ bayramlar",
+      "product_6": "Yarim tayyor mahsulotlar ishlab chiqarish uchun bo'sh tsexlar",
+      "product_7": "Oziq-ovqat do'konlari uchun individual kontseptsiyalarni ishlab chiqish: ko'rgazmali pishirish stantsiyalari, o'z-o'ziga xizmat ko'rsatish, tarqatish liniyasi orqali xizmat ko'rsatish, ofitsiantlar xizmati"
+    }
+  },
+  "transportation": {
+    "title": "Yo'lovchi tashish",
+    "title_text": "Kompaniya 2017 yildan beri yo‘lovchi tashish xizmatlarini ko‘rsatib kelmoqda. Biz har bir mijozga kafolat berishga tayyormiz. Dastlab kompaniya davlat korxonalarida mavjud bo'lgan yo'lovchi tashish xavfsizligini tashkil etish tizimini asos qilib oldi. Bizning parkimizda turli o'lchamdagi avtobuslarning keng assortimenti mavjud: mikroavtobuslardan 50 o'rinli avtobuslargacha.",
+    "top": {
+      "product_title": "Tizim uchta asosiy komponentga qisqartiriladi.",
+      "product_1": "Haydovchi kadrlar - professional tanlash va marshrutga chiqishdan oldin tayyorgarlik, sayohatdan oldin va safardan keyingi tibbiy ko'rik.",
+      "product_2": "Nazorat va malaka oshirish tizimi – yo‘l harakati qoidalarini bilish darajasini har yili majburiy monitoringi tashkil etildi.",
+      "product_3": "Uskunalar - liniyaga kirishdan oldin va parkga kelgandan keyin texnik holatni majburiy tekshirish, ishlab chiqaruvchilar tomonidan sertifikatlangan ta'mirlash zonalarini tashkil etish."
+    },
+    "bottom": {
+      "product_1": "Yo'lovchilarning yuqori darajadagi qulayligi",
+      "product_2": "Safar davomida xavfsizlik",
+      "product_3": "Transportni qat'iy ravishda kelishilgan vaqt va joyda yetkazib berish."
+    }
+  },
+  "service": {
+    "text": "Alfabest - sanoat korxonalari, umumiy ovqatlanish ob'ektlari, savdo va biznes markazlari, ombor majmualari va texnoparklarga texnik xizmat ko'rsatish, tozalash, foydalanish va texnik xizmat ko'rsatish bo'yicha kompleks echimlarni taklif etadi. Biz xizmat ko'rsatishning yuqori standartlarini qo'llab-quvvatlaymiz va zamonaviy ekologik toza texnologiyalardan foydalangan holda innovatsion echimlarni amalga oshiramiz.",
+    "middle_hero": {
+      "title": "Hamkorlarimiz bizdan mamnun",
+      "desc": "Agar siz bizning xizmatlarimizga qiziqsangiz, bizning hamkorimiz bo'ling va premium xizmatlarga ega bo'ling",
+      "title_mobile": "Biz hamkorlarimiz bilan besh yildan beri birgamiz",
+      "desc_mobile": "Biz hamkorlarimiz bilan besh yildan beri muvaffaqiyatli ishlayapmiz. Endi bizda 10 dan ortiq mijozlar bor va siz ham biz bilan hamkorlik qilishga xush kelibsiz."
+    },
+    "bottom": {
+      "title": "Bizning afzalliklarimiz"
+    }
   }
 
 }

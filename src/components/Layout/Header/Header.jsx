@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../../assets/style/header.scss";
 import { useTranslation } from 'react-i18next';
 import headerDesktopLogo from '../../../assets/images/desktop-headerLogo.svg';
@@ -25,8 +25,16 @@ const Header = () => {
 		i18n.changeLanguage(e || "ru");
 	}
 
+	useEffect(() => {
+		setisactiveNavBar(false)
+	}, [pathname])
+
+	useEffect(() => {
+		isactiveNavBar ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
+	}, [isactiveNavBar])
+
 	return (
-		<header className="header">
+		<header className="header" style={activeServicesBar ? { "overflow": "hidden" } : null}>
 			<div className={pathname === "/" ? "header-wrapper" : "header-wrapper header-DarkColor"}>
 				<div className="container">
 					<div className="header-top">
@@ -51,15 +59,15 @@ const Header = () => {
 										}
 									</div>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
-									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/services">{t("header.service")}</NavLink>
-									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate">{t("header.corporate")}</NavLink>
+									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/service">{t("header.service")}</NavLink>
+									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate-catering">{t("header.corporate")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/transportation">{t("header.transportation")}</NavLink>
 								</div>
-								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/about">{t("header.about_company")}</NavLink>
-								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/carery">{t("header.carery")}</NavLink>
+								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/aboutus">{t("header.about_company")}</NavLink>
+								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/career">{t("header.carery")}</NavLink>
 								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/shopping">{t("header.shopping")}</NavLink>
 								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/cooperation">{t("header.cooperation")}</NavLink>
-								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/contact">{t("header.contact")}</NavLink>
+								<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/contacts">{t("header.contact")}</NavLink>
 								<div className="header-nav-list-services-bottom">
 									<div className="header-nav-list-services-bottom-title"><span>{t("header.follow")}</span></div>
 									<div className="header-nav-list-services-bottom-links">
@@ -86,7 +94,7 @@ const Header = () => {
 									<span
 										onClick={() => changeWebsiteLang("ru")}
 										style={window.localStorage.getItem('lang') === "ru" ? { "color": "#989CA2" } : null}>Ru</span>
-									<div></div>
+									<div style={pathname === "/" ? { "background": "#FFFFFF" } : { "background": "black" }}></div>
 									<span
 										onClick={() => changeWebsiteLang("uz")}
 										style={window.localStorage.getItem('lang') === "uz" ? { "color": "#989CA2" } : null}>Uz</span>
@@ -100,16 +108,16 @@ const Header = () => {
 						</nav>
 					</div>
 				</div>
-				<div className="header-border"></div>
+				<div className="header-border" style={pathname === "/" ? { "backgroundColor": "#FFFFFF" } : { "backgroundColor": "#F0F0F0" }}></div>
 				<div className="container">
 					<nav className="header-bottom">
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/service">{t("header.service")}</NavLink>
-						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corparete">{t("header.corporate")}</NavLink>
+						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate-catering">{t("header.corporate")}</NavLink>
 						<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/transportation">{t("header.transportation")}</NavLink>
 					</nav>
 				</div>
-				<div className="header-border"></div>
+				<div className="header-border" style={pathname === "/" ? { "backgroundColor": "#FFFFFF" } : { "backgroundColor": "#F0F0F0" }}></div>
 			</div>
 		</header>
 	);

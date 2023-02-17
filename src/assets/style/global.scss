@@ -16,7 +16,7 @@ body {
     padding: 0 90px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1530px;
+    max-width: 1440px;
 }
 
 @media only screen and (max-width: 1028px) {
@@ -41,6 +41,72 @@ $primary-green-color: #28C79E;
 }
 
 
+// shablon
+
+%custom-hero {
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+%custom-heroWrapper {
+    width: 100%;
+    padding: 0 0 40px 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, rgba(0, 0, 0, 0.52) 71.51%);
+
+    &>h2 {
+        margin-top: 10px;
+        @include fontStyle(700, 36px, 43px, $primary-light-color);
+    }
+
+    &>img {
+        width: 20px;
+        height: 28px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    %custom-hero {
+        height: 300px;
+    }
+
+    %custom-heroWrapper {
+        padding: 0 0 15px 15px;
+
+        &>h2 {
+            @include fontStyle(700, 17px, 22px, $primary-light-color);
+        }
+
+        &>img {
+            width: 16px;
+            height: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 632px) {
+    %custom-hero {
+        height: 220px;
+        border-radius: 15px;
+    }
+
+}
+
+%custom-button {
+    padding: 15px 30px;
+    @include fontStyle(600, 16px, 19px, $primary-light-color );
+    border-radius: 15px;
+    border: none;
+    background-color: $primary-green-color;
+    cursor: pointer;
+}
 
 // fonts
 /* exo-2-regular - latin_cyrillic */

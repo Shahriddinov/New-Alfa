@@ -20,9 +20,7 @@
   &-border {
     height: 1px;
     width: 100%;
-    background: $primary-light-color;
     opacity: 0.8;
-    transform: trans;
   }
 
   &-top {
@@ -91,6 +89,7 @@
         gap: 15px;
         height: 24px;
         overflow: hidden;
+
 
         &>div {
           display: flex;
@@ -227,7 +226,7 @@
       display: none;
     }
 
-    &-border {
+    &-border:last-child {
       display: none;
     }
 
@@ -243,6 +242,7 @@
 
     &-nav {
       gap: 20px;
+      position: relative;
 
       &-lang {
         &-icon {
@@ -264,12 +264,13 @@
         padding: 30px 20px 52px;
         top: 64px;
         right: 0;
-        width: 100vw;
-        min-height: calc(100vh - 64px);
+        left: 0;
+        bottom: 0;
         flex-direction: column;
         background-color: $primary-light-color;
         z-index: 8;
         border-top: 1px solid #F0F0F0;
+        overflow: hidden;
 
         &>a {
           @include fontStyle(700, 20px, 24px, $primary-dark-color);

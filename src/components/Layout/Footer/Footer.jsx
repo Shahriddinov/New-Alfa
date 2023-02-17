@@ -35,21 +35,20 @@ const Footer = () => {
                   </div>
                 </div>
                 <Link to="/enginering">{t("header.enginering")}</Link>
-                <Link to="/services">{t("header.service")}</Link>
-                <Link to="/corporate">{t("header.corporate")}</Link>
+                <Link to="/service">{t("header.service")}</Link>
+                <Link to="/corporate-catering">{t("header.corporate")}</Link>
                 <Link to="/transportation">{t("header.transportation")}</Link>
               </div>
               <Link to="/aboutus">{t("header.about_company")}</Link>
-              <Link to="/carery">{t("header.carery")}</Link>
+              <Link to="/career">{t("header.carery")}</Link>
               <Link to="/shopping">{t("header.shopping")}</Link>
-              <Link to="/partners">{t("footer.partners")}</Link>
               <Link to="/cooperation">{t("header.cooperation")}</Link>
-              <Link to="/contact">{t("header.contact")}</Link>
+              <Link to="/contacts">{t("header.contact")}</Link>
             </nav>
             <nav className="footer-main-links-secondary-list">
               <Link to="/enginering">{t("header.enginering")}</Link>
               <Link to="/service">{t("header.service")}</Link>
-              <Link to="/corparete">{t("header.corporate")}</Link>
+              <Link to="/corporate-catering">{t("header.corporate")}</Link>
               <Link to="/transportation">{t("header.transportation")}</Link>
             </nav>
           </div>
