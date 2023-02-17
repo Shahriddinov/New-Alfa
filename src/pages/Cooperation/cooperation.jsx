@@ -5,9 +5,31 @@ import formImg from "../../assets/images/cooperation-form-img.svg";
 import tracedVektor from "../../assets/images/traced-vektor.svg";
 import "./cooperation.scss";
 import "./cooperation.scss";
+import axios from "axios";
 
 const Cooperation = () => {
   const { t } = useTranslation();
+
+  const onSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      const { full_name, tell_number } = e.target;
+      const data = {
+        "service_id": 0,
+        "full_name": full_name.value,
+        "phone": tell_number.value
+      };
+      const res = await axios.post("https://alfabest.napaautomotive.uz/api/service_consumer", data);
+      if (res?.data?.status === true) {
+        alert("Succes!");
+        full_name.value = "";
+        tell_number.value = "";
+      }
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
   return (
     <div className="main">
       <div className="container">
@@ -45,7 +67,7 @@ const Cooperation = () => {
           </div>
         </div>
         <div className="main-forming">
-          <form action="" className="main-forming-form">
+          <form action="" className="main-forming-form" onSubmit={onSubmit}>
             <label htmlFor="" className="main-forming-form-item" >
               <span>{t("cooperation.form.service")}</span>
               <select placeholder="Корпоративное питание" name="" id="" className="main-forming-form-item-select">
@@ -54,11 +76,11 @@ const Cooperation = () => {
             </label>
             <label htmlFor="" className="main-forming-form-item">
               <span>{t("cooperation.form.full_name")}</span>
-              <input placeholder={t("cooperation.form.name")} type="text" required maxLength={50} minLength={3} />
+              <input name="full_name" placeholder={t("cooperation.form.name")} type="text" required maxLength={50} minLength={3} />
             </label>
             <label htmlFor="" className="main-forming-form-item">
               <span>{t("cooperation.form.tell")}</span>
-              <input required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" type="tel" maxLength={50} minLength={3} placeholder="+998" />
+              <input name="tell_number" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" type="tel" maxLength={50} minLength={3} placeholder="+998" />
             </label>
             <button className="main-forming-btn" type="submit">{t("send")}</button>
           </form>
