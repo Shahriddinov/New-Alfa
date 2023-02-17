@@ -59,7 +59,7 @@ const Header = () => {
 										}
 									</div>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/enginering">{t("header.enginering")}</NavLink>
-									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/services">{t("header.service")}</NavLink>
+									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/service">{t("header.service")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/corporate-catering">{t("header.corporate")}</NavLink>
 									<NavLink style={({ isActive }) => isActive ? { "color": "#28C79E" } : null} to="/transportation">{t("header.transportation")}</NavLink>
 								</div>
