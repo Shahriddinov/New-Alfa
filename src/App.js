@@ -5,6 +5,7 @@ import { Spinner, Layout } from "./components/index";
 import ScrollTop from "./hoc/ScrollTop";
 
 const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About/about.jsx"))
 const Career = lazy(() => import("./pages/Career"));
 const Cooperation = lazy(() => import("./pages/Cooperation"));
 const Contacts = lazy(() => import("./pages/Contacts"));
@@ -13,16 +14,19 @@ const Service = lazy(() => import("./pages/Service"));
 const Corporate = lazy(() => import("./pages/Corporate"));
 const Transportation = lazy(() => import("./pages/Transportation"));
 
+
 const routes = [
 	{ path: "", element: Home },
+	{ path: "/aboutus", element: About },
 	{ path: "/career", element: Career },
 	{ path: "/cooperation", element: Cooperation },
 	{ path: "/contacts", element: Contacts },
 	{ path: "/enginering", element: Enginering },
 	{ path: "/service", element: Service },
 	{ path: "/corporate-catering", element: Corporate },
-	{ path: "/transportation", element: Transportation }
+	{ path: "/transportation", element: Transportation },
 ]
+
 const RoutesContainer = () => (
 	<Router>
 		<Layout>

@@ -12,6 +12,7 @@ import tracedVektor from "../../assets/images/traced-vektor.svg";
 import "./enginering.scss";
 import "../../assets/style/service.scss";
 import { ServiceMiddleHero } from "../../components";
+import PhotoGallery from "../../components/Layout/photoGallery/photoGallery";
 
 const Enginering = () => {
   const { t } = useTranslation();
@@ -113,6 +114,7 @@ const Enginering = () => {
             </div>
           </div>
         </div>
+        <PhotoGallery/>
       </div>
     </div>
   )

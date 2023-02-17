@@ -17,6 +17,7 @@ import tracedVektor from "../../assets/images/traced-vektor.svg";
 import "./service.scss";
 import "../../assets/style/service.scss";
 import { ServiceMiddleHero } from "../../components";
+import PhotoGallery from "../../components/Layout/photoGallery/photoGallery";
 
 const Service = () => {
   const { t } = useTranslation();
@@ -126,6 +127,7 @@ const Service = () => {
             </div>
           </div>
         </div>
+        <PhotoGallery/>
       </div>
     </div>
   )

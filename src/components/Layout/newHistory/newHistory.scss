@@ -1,0 +1,169 @@
+@import '../../../assets/style/global.scss';
+
+
+.history-container{
+    max-width: 1440px;
+    margin: 60px auto 0 auto;
+
+    @include respond(phone){
+        margin: 30px auto 0 auto;
+        width: 375px;   
+    }
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 90px 0 90px;
+
+        @include respond(phone){
+            margin: 0 0 0 16px;
+        }
+
+        &__left{
+
+            & > img {
+                @include respond(phone){
+                    width: 16px;
+                    height: 22px;
+                }
+            }
+
+            & > h1 {
+                margin-top: 10px;
+                max-width: 140px;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 41px;
+                color: #1B2330;
+
+                @include respond(phone){
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        &__right{
+            @include respond(phone){
+                display: none;
+            }
+
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+            & > button{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                border: none;
+
+                &:hover{
+                    cursor: pointer;
+                    border: 1px solid black;
+                }
+                & > img {
+
+                }
+            }
+        }
+    }
+
+    &-bottom{
+        margin: 30px 90px 0 90px;
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @include respond(phone){
+            margin: 20px 16px 0 16px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        & > img{
+            max-height: 320px;
+
+
+            @include respond(tab-port){
+                object-fit: cover;
+                border-radius: 15px;
+            }
+    
+            @include respond(phone){
+                width: 343px;
+                height: 210px;
+            }
+
+        }
+
+        &__right{
+            & > h1{
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 54px;
+                color: #1B2330;
+                @include respond(phone){
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+            }
+
+            & > p{
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 24px;
+                min-height: 192px;
+                color: #1B2330;
+
+                @include respond(tab-port){
+                    min-height: auto;
+                }
+        
+
+                @include respond(phone){
+                    font-size: 16px;
+                    line-height: 22px;
+                    min-height: 286px;
+                }
+
+            }
+
+            &-years{
+                margin-top: 74px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                @include respond(phone){
+                    margin-top: 20px;
+                    gap: 20px;
+                }
+
+                & > h1{
+                    font-weight: 700;
+                    font-size: 45px;
+                    line-height: 54px;
+                    color: #72767D;
+                    @include respond(phone){
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+
+                    &.active{
+                        color: $primary-green-color;
+                    }
+
+                    &:hover{
+                        color: $primary-green-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

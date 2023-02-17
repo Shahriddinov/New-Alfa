@@ -5,6 +5,7 @@
     font-family: "Exo 2";
     font-style: normal;
     text-decoration: none;
+    z-index: 3;
 }
 
 body {
@@ -30,7 +31,7 @@ $primary-dark-color: #1B2330;
 $primary-green-color: #28C79E;
 
 
-// mixins 
+// mixins
 
 @mixin fontStyle($weight, $size, $line, $color) {
     font-weight: $weight;
@@ -220,16 +221,42 @@ $primary-green-color: #28C79E;
     font-family: 'Exo 2';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.woff') format('woff'),
-        /* Modern Browsers */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.svg#Exo2') format('svg');
-    /* Legacy iOS */
+
+    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.svg#Exo2') format('svg'); /* Legacy iOS */
+  }
+  
+
+
+
+
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 50em) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 72em) {@content};
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 89em) {@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: 112.5em) {@content};
+    }
 }
+
+
+
+
+
+// ///////////////////  Variables ///////////////////////////
+
+$primaryGreenColor: #28C79E;
+$secondaryTextColor: #1B2330;
+
+
