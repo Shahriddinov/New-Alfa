@@ -1,0 +1,166 @@
+@import "./global.scss";
+
+.service {
+  &-top {
+    margin-bottom: 60px;
+
+    &-title {
+      margin-bottom: 30px;
+
+      &>h4 {
+        margin-bottom: 20px;
+        @include fontStyle(700, 24px, 29px, $primary-dark-color);
+      }
+
+      &>p {
+        @include fontStyle(400, 17px, 140%, $primary-dark-color);
+      }
+    }
+
+    &-products {
+      position: relative;
+      padding: 40px 60px;
+      background: #F2FCF9;
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 40px;
+
+      &-vektor {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+      }
+
+      &-item {
+        width: 100%;
+        max-width: 540px;
+
+        &>img {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+        }
+
+        &>p {
+          margin-top: 10px;
+          @include fontStyle(500, 20px, 24px, $primary-dark-color);
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    padding-top: 60px;
+
+    &-title {
+      margin-bottom: 30px;
+
+      &>img {
+        width: 20px;
+        height: 28px;
+        object-fit: cover;
+      }
+
+      &>h3 {
+        margin-top: 10px;
+        @include fontStyle(700, 34px, 41px, $primary-dark-color);
+      }
+    }
+
+    &-products {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 30px;
+
+      &-item {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        align-items: start;
+        gap: 30px;
+
+        &>img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+        }
+
+        &>p {
+          @include fontStyle(500, 20px, 24px, $primary-dark-color);
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 856px) {
+  .service {
+    &-top {
+      margin-bottom: 30px;
+
+      &-title {
+        &>h4 {
+          @include fontStyle(700, 18px, 22px, $primary-dark-color);
+        }
+
+        &>p {
+          font-size: 16px;
+        }
+      }
+
+      &-products {
+        padding: 20px 15px;
+        row-gap: 20px;
+
+        &-item {
+          &>img {
+            width: 30px;
+            height: 30px;
+          }
+
+          &>p {
+            @include fontStyle(500, 16px, 19px, $primary-dark-color);
+          }
+        }
+      }
+    }
+
+    &-bottom {
+      padding-top: 30px;
+
+      &-title {
+        margin-bottom: 20px;
+
+        &>img {
+          width: 16px;
+          height: 22px;
+        }
+
+        &>h3 {
+          @include fontStyle(700, 18px, 22px, $primary-dark-color);
+        }
+      }
+
+      &-products {
+        row-gap: 20px;
+
+        &-item {
+          gap: 20px;
+
+          &>img {
+            width: 30px;
+            height: 30px;
+          }
+
+          &>p {
+            @include fontStyle(500, 16px, 19px, $primary-dark-color);
+          }
+        }
+      }
+    }
+  }
+}

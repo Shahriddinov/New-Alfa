@@ -5,6 +5,7 @@
     font-family: "Exo 2";
     font-style: normal;
     text-decoration: none;
+    z-index: 3;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     padding: 0 90px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1530px;
+    max-width: 1440px;
 }
 
 @media only screen and (max-width: 1028px) {
@@ -40,6 +41,72 @@ $primary-green-color: #28C79E;
 }
 
 
+// shablon
+
+%custom-hero {
+    max-width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: end;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+%custom-heroWrapper {
+    width: 100%;
+    padding: 0 0 40px 30px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.72%, rgba(0, 0, 0, 0.52) 71.51%);
+
+    &>h2 {
+        margin-top: 10px;
+        @include fontStyle(700, 36px, 43px, $primary-light-color);
+    }
+
+    &>img {
+        width: 20px;
+        height: 28px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    %custom-hero {
+        height: 300px;
+    }
+
+    %custom-heroWrapper {
+        padding: 0 0 15px 15px;
+
+        &>h2 {
+            @include fontStyle(700, 17px, 22px, $primary-light-color);
+        }
+
+        &>img {
+            width: 16px;
+            height: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 632px) {
+    %custom-hero {
+        height: 220px;
+        border-radius: 15px;
+    }
+
+}
+
+%custom-button {
+    padding: 15px 30px;
+    @include fontStyle(600, 16px, 19px, $primary-light-color );
+    border-radius: 15px;
+    border: none;
+    background-color: $primary-green-color;
+    cursor: pointer;
+}
 
 // fonts
 /* exo-2-regular - latin_cyrillic */
@@ -154,18 +221,33 @@ $primary-green-color: #28C79E;
     font-family: 'Exo 2';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.woff') format('woff'),
-        /* Modern Browsers */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/exo-2-v20-latin_cyrillic-900.svg#Exo2') format('svg');
-    /* Legacy iOS */
+
+    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/exo-2-v20-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/exo-2-v20-latin_cyrillic-900.svg#Exo2') format('svg'); /* Legacy iOS */
+  }
+
+
+
+
+
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 50em) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 72em) {@content};
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 89em) {@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: 112.5em) {@content};
+    }
 }
 @mixin respond($breakpoint){
     @if $breakpoint == phone {
@@ -181,3 +263,14 @@ $primary-green-color: #28C79E;
         @media only screen and (max-width: 112.5em) {@content};
     }
 }
+
+
+
+
+
+// ///////////////////  Variables ///////////////////////////
+
+$primaryGreenColor: #28C79E;
+$secondaryTextColor: #1B2330;
+
+
