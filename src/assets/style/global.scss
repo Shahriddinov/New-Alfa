@@ -167,3 +167,17 @@ $primary-green-color: #28C79E;
         url('../fonts/exo-2-v20-latin_cyrillic-900.svg#Exo2') format('svg');
     /* Legacy iOS */
 }
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) {@content};
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) {@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: 112.5em) {@content};
+    }
+}
